@@ -1,0 +1,32 @@
+import React, { useState } from 'react';
+import VoteButton from './index.html';
+
+function App() {
+  const [votes, setVotes] = useState({ option1: 0, option2: 0, option3: 0 });
+
+  const handleVote = (option) => {
+    setVotes((prevVotes) => ({
+      ...prevVotes,
+      [option]: prevVotes[option] + 1,
+    }));
+  };
+
+  return (
+    <div className="App">
+      <h1>Voting Website</h1>
+      <div className="options">
+        <VoteButton option="option1" onClick={handleVote} />
+        <VoteButton option="option2" onClick={handleVote} />
+        <VoteButton option="option3" onClick={handleVote} />
+      </div>
+      <div className="results">
+        <h2>Results:</h2>
+        <p>Option 1: {votes.option1} votes</p>
+        <p>Option 2: {votes.option2} votes</p>
+        <p>Option 3: {votes.option3} votes</p>
+      </div>
+    </div>
+  );
+}
+
+export default App;
