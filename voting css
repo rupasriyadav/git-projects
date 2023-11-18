@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(th\ -\ Copy.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: darkgreen;
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#voting-section {
+  background-color:8cecec;
+  padding: 20px;
+  border: 1px solid #ddd;
+  color:white;
+  
+}
+
+#options-list {
+  list-style: none;
+  padding: 0;
+  color:white;
+ 
+}
+
+li {
+  margin: 10px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+#result-section {
+  margin-top: 90px;
+  text-align: center;
+  color:black;
+  background-color:white;
+  width: 300px;
+  justify-content: center;
+  padding: 50px;
+  margin: 20px;
+  
+}
+.center {
+  margin: auto;
+  width: 80%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  justify-content: center;
+}/* Add some basic CSS to style the navbar */
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+li.navitem {
+  float: left;
+}
+
+li.navitem a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+justify-content: left;
+}
+
+li.navitem a:hover {
+  background-color: #444;
+}
