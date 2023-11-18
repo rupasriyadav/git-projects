@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Website</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    <header>
+        <h1>Voting Website</h1>
+        <ul class="navbar">
+        <li class="navitem"><a href="form.html">Home</a></li>
+        <li class="navitem"><a href="index 1.html">Voting</a></li>
+        <li class="navitem"><a href="result.html">Result</a></li>
+        <li class="navitem"><a href="contact.html">Contact</a></li>
+        <li class="navitem"><a href="form.html">Contact</a></li>
+
+</ul>
+
+    </header>
+    
+    <main>
+        <section id="voting-section">
+            <h2>Vote for your favorite Party:</h2>
+            <ul id="options-list">
+                <li>
+                    <label>
+                        <input type="radio" name="voting-option" value="option1"> <img src="th (6).jpeg" width="40px" height="50px"> BJP
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="voting-option" value="option2"> <img src="th (7).jpeg" width="40px" height="50px"> TRS
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="voting-option" value="option3">  <img src="th (5).jpeg" width="40px" height="50px"> CONGRESS
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="voting-option" value="option4">   <img src="th (8).jpeg" width="40px" height="40px"> OTHERS
+                    </label>
+                </li>
+
+
+            </ul>
+            <button id="vote-button">Vote</button><br/>
+        </br>
+    
+
+
+            <form action="result.html" method="get">
+                <!-- Your form elements go here -->
+                
+                <button type="result" value="result">result</button>
+                <script>
+                    // Redirect to another page when a button is clicked
+document.getElementById("myButton").addEventListener("click", function() {
+  // Replace 'targetPage.html' with the URL of the page you want to link to
+  window.location.href = "targetPage.html";
+});
+
+                </script>
+            </form>
+            </main>
+        </section>
+       
+        
+    
+
+</body>
+</html>
